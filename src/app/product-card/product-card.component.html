@@ -1,0 +1,13 @@
+<div class="card">
+  <img [src]="product.image" class="img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <p class="card-text">{{product.description}}</p>
+    <p class="card-text"><strong>{{product.count == 0 ? "Out Of Stock" : "In Stock"}}</strong></p>
+    <p class="card-text">{{product.price | currency}} </p>
+    <button class="btn btn-primary" (click)="show()">View</button>
+    <p class="card-text"><small class="text-muted">{{product.createdAt | date : 'MMMM YYYY'}}</small></p>
+    <p class="card-text"> Rate : {{product.rate}}</p>
+
+  </div>
+</div>
