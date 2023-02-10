@@ -9,6 +9,12 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { CurrencyPipe } from './pipes/currency.pipe';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { LoginComponent } from './login/login.component';
+import {FormsModule} from "@angular/forms";
+import { RegisterComponent } from './register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +24,15 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     ProductCardComponent,
     AddProductComponent,
     CurrencyPipe,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
